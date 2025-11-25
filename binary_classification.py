@@ -8,8 +8,8 @@ from matplotlib.lines import Line2D
 import ml_edu.experiment
 import ml_edu.results
 
-## @Author ClayD in Sh.Sumhs at 2025.8.9
-
+## @Author Simon H 
+#Created on Sat Aug 9
 # 这个模型是基于一份含有两种类型大米，共七个特征的数据集制作。归一化后划分训练集测试集和验证集。这里提取标签单独存放是因为考虑到多轮训练，带标签进去可能会导致标签泄露。
 # 接下来定义两个函数，调整超参，计算性能指标，绘图，输出训练集和测试集的比较结果  完事。
 
@@ -163,4 +163,5 @@ test_metrics_all_features = experiment_all_features.evaluate(
     test_features,
     test_labels,
 )
+
 compare_train_test(experiment_all_features, test_metrics_all_features)
