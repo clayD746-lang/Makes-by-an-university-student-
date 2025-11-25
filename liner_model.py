@@ -7,7 +7,8 @@ import plotly.express as px
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
-## @Author ClayD in SH.Sumhs
+## @Author:Simon H
+##Created on Fri Aug 1
 
 ##此代码为线性回归模型，原数据集为chicago_taxi_train
 
@@ -111,4 +112,5 @@ accuracy = 100 - mape
 print(f"模型准确率: {accuracy:.2f}% (基于平均绝对百分比误差)")
 
 rmse = np.sqrt(np.mean((test_labels - predictions) ** 2))
+
 print(f"均方根误差 (RMSE): {rmse:.2f}")
